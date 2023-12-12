@@ -12,37 +12,37 @@
 	<div id="main">
 		<div id="manual">
             <div id="my-name" class = "username"></div>
-			<p>← left</p>
-			<p>↑ trans</p>
-			<p>→ right</p>
-			<p>↓ down</p>
-			<p>space teleport</p>
+			<p>← 向左</p>
+			<p>↑ 换向</p>
+			<p>→ 向右</p>
+			<p>↓ 向下</p>
+			<p>[空格] 直接干到底</p>
 			<div class="score-box">
-				score
+				分数
 				<br>
 				<span id="score">0</span>
 			</div>
 			<a href="javascript:;" class="btn" id="pausebtn"
 				onclick="tetris.pause()"
-                ontouchstart="tetris.pause()">Pause</a>
+                ontouchstart="tetris.pause()">暂停</a>
             <br />
 			<a href="javascript:;" class="btn" id="continuebtn"
 				onclick="tetris.start(); rmCls(stage, 'pause')"
-				ontouchstart="tetris.start(); rmCls(stage, 'pause')">Continue</a>
+				ontouchstart="tetris.start(); rmCls(stage, 'pause')">继续</a>
 			<br/>
 			<a href="javascript:;" class="btn" id="restartbtn"
 				onclick="tetris.restart(); stage.className='stage';"
-				ontouchstart="tetris.restart(); stage.className='stage';">Restart</a>
+				ontouchstart="tetris.restart(); stage.className='stage';">重来</a>
 			<div id="next"> </div>
 		</div>
-        <div id="twostage">
-            <div id="stage" class="stage"><div></div></div>
-            <div id="stage2" class="stage"><div></div></div>
-        </div>
+
+        <div id="stage" class="stage"><div></div></div>
+
+        <div id="stage2" class="stage"><div></div></div>
         <div id="manual2">
-            <p id="opponent-name" class = "username">Matching...</p>
+            <p id="opponent-name" class = "username">比赛中...</p>
             <div class="score-box">
-                    score 
+                    分数 
                     <br>
                     <span id="score2">0</span>
             </div>
